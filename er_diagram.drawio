@@ -130,8 +130,8 @@
                 <mxCell id="99" value="created_at" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="90" y="410" width="70" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="101" value="update_at" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="90" y="440" width="70" height="20" as="geometry"/>
+                <mxCell id="101" value="updated_at" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="440" width="80" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="105" value="memo" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="660" y="380" width="50" height="20" as="geometry"/>
@@ -139,8 +139,8 @@
                 <mxCell id="106" value="&lt;span&gt;created_at&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="660" y="410" width="70" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="107" value="&lt;span&gt;update_at&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="660" y="440" width="70" height="20" as="geometry"/>
+                <mxCell id="107" value="&lt;span&gt;updated_at&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="440" width="80" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="108" value="name" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="90" y="660" width="50" height="20" as="geometry"/>
@@ -149,7 +149,7 @@
                     <mxGeometry x="90" y="690" width="60" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="110" value="&lt;pre class=&quot;tw-data-text tw-text-large XcVN5d tw-ta&quot; id=&quot;tw-target-text&quot; style=&quot;line-height: 36px ; border: none ; padding: 2px 0.14em 2px 0px ; position: relative ; margin-top: -2px ; margin-bottom: -2px ; resize: none ; font-family: inherit ; overflow: hidden ; width: 270px ; overflow-wrap: break-word ; color: rgb(32 , 33 , 36)&quot;&gt;&lt;span class=&quot;Y2IQFc&quot; lang=&quot;en&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;temperature&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="90" y="710" width="290" height="40" as="geometry"/>
+                    <mxGeometry x="90" y="715" width="290" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="111" value="email" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="90" y="350" width="40" height="20" as="geometry"/>
@@ -157,8 +157,8 @@
                 <mxCell id="112" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;name&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="80" y="320" width="50" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="113" value="date" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="660" y="350" width="40" height="20" as="geometry"/>
+                <mxCell id="113" value="skiing_date" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="350" width="80" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="114" value="name" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="660" y="320" width="50" height="20" as="geometry"/>
@@ -169,11 +169,11 @@
                 <mxCell id="120" value="created_at" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="90" y="790" width="70" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="121" value="update_at" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="90" y="820" width="70" height="20" as="geometry"/>
+                <mxCell id="121" value="updated_at" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="820" width="80" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="123" value="date" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="660" y="660" width="40" height="20" as="geometry"/>
+                <mxCell id="123" value="reviiew_date" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="659" y="660" width="80" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="124" value="contents" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="660" y="690" width="60" height="20" as="geometry"/>
@@ -181,8 +181,8 @@
                 <mxCell id="125" value="created_at" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="660" y="720" width="70" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="126" value="update_at" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="660" y="755" width="70" height="20" as="geometry"/>
+                <mxCell id="126" value="updated_at" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="755" width="80" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="176" value="skiing_history_users" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
                     <mxGeometry x="324" y="250" width="180" height="280" as="geometry">
@@ -225,8 +225,8 @@
                 <mxCell id="188" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="186" vertex="1">
                     <mxGeometry x="30" width="150" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="189" value="users_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="360" y="320" width="60" height="20" as="geometry"/>
+                <mxCell id="189" value="user_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="365" y="320" width="50" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="195" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="180" target="75" edge="1">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
@@ -281,26 +281,26 @@
                 <mxCell id="210" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="208" vertex="1">
                     <mxGeometry x="30" width="150" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="211" value="ski_resorts_id" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="369" y="660" width="90" height="20" as="geometry"/>
+                <mxCell id="211" value="ski_resort_id" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="369" y="660" width="80" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="213" value="skiing_histories_is" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="360" y="350" width="110" height="20" as="geometry"/>
+                <mxCell id="213" value="skiing_history_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="365" y="350" width="100" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="214" value="reviews_id" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
+                <mxCell id="214" value="review_id" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
                     <mxGeometry x="369" y="690" width="70" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="215" value="&lt;span&gt;created_at&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="369" y="380" width="70" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="216" value="&lt;span&gt;update_at&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="369" y="410" width="70" height="20" as="geometry"/>
+                <mxCell id="216" value="&lt;span&gt;updated_at&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="369" y="410" width="80" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="217" value="&lt;span&gt;created_at&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="369" y="720" width="70" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="218" value="&lt;span&gt;update_at&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="369" y="750" width="70" height="20" as="geometry"/>
+                <mxCell id="218" value="&lt;span&gt;updated_at&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="369" y="750" width="80" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="220" value="" style="endArrow=none;html=1;rounded=0;dashed=1;dashPattern=1 2;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
