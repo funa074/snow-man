@@ -16,7 +16,7 @@ class EventServiceProvider extends ServiceProvider
      */
     protected $listen = [
         Registered::class => [
-            SendEmailVerificationNotification::class,
+            SendEmailVerificationNotification::class, //ユーザー登録処理の完了時に確認メールを送信するようにしている（イベントのフック）
         ],
     ];
 
