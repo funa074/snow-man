@@ -7,7 +7,12 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class VerifyEmailJapanese extends Notification
+// use Illuminate\Notifications\Notifiable;
+use Illuminate\Auth\Notifications\VerifyEmail;
+use Illuminate\Support\Facades\Lang;
+
+// class VerifyEmailJapanese extends Notification
+class VerifyEmailJapanese extends VerifyEmail
 {
     use Queueable;
 
@@ -41,10 +46,10 @@ class VerifyEmailJapanese extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject(Lang::getFromJson('登録確認メール')) // メールのタイトル
+            ->subject(Lang::get('登録確認メール')) // メールのタイトル
             ->markdown('emails.verifyemail', ['url' => $this->verificationUrl($notifiable), 'user' => $notifiable]);
     }
-
+    
     /**
      * Get the array representation of the notification.
      *
