@@ -15,13 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Auth::routes();
 Auth::routes(['verify' => true]);
 
-// Route::get('/home', 'HomeController@index')->name('home');
 Route::middleware('verified')->group(function () {
-    Route::group(['middleware' => 'auth:user'], function () {
-        // メール認証済みかつログイン済みのユーザーが見れる画面
         Route::get('/home', 'HomeController@index')->name('home');
-    });
 });
