@@ -6,6 +6,8 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+use App\Notifications\ResetPassword;// 作ったResetPasswordをuseする
+
 class User extends Authenticatable implements MustVerifyEmail // MustVerifyEmailをimplements
 {
     use Notifiable;
@@ -46,5 +48,16 @@ class User extends Authenticatable implements MustVerifyEmail // MustVerifyEmail
     {
         // 日本語化したメールを送信
         $this->notify(new \App\Notifications\VerifyEmailJapanese);
+    }
+
+    /**
+     * パスワードリセット通知の送信をオーバーライド
+     *
+     * @param  string  $token
+     * @return void
+     */
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new ResetPassword($token));
     }
 }
