@@ -1,8 +1,97 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+
+// 配色
+$main-color: #89c3eb;
+
+// 全体共通
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #b0afb2;
+}
+
+html {
+    font-size: 1em;
+    height: 100%;
+    // background: linear-gradient(#b0afb2, snow);
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.snow {
+    color: snow; /*雪の色*/
+    font-size: 18px; /*雪の大きさ*/
+    position: fixed;
+    top: -5%; /*初期位置*/
+    text-shadow: 5vw -100px 2px, 10vw -400px 3px, 20vw -500px 4px,
+        30vw -580px 1px, 39vw -250px 2px, 42vw -340px 5px, 56vw -150px 2px,
+        63vw -180px 0, 78vw -220px 4px, 86vw -320px 9px, 94vw -170px 7px,
+        5vw -600px 2px, 10vw -700px 3px, 20vw -680px 4px, 30vw -880px 1px,
+        39vw -750px 2px, 42vw -940px 5px, 56vw -850px 2px, 63vw -1080px 0,
+        78vw -620px 4px, 86vw -720px 9px, 94vw -870px 7px, 78vw -1120px 4px,
+        86vw -1220px 9px, 94vw -1370px 7px, 39vw -1450px 2px, 42vw -1540px 5px,
+        56vw -1650px 2px, 63vw -1780px 0;
+    animation: anim 8s linear infinite;
+}
+
+@keyframes anim {
+    100% {
+        color: transparent;
+        top: 150%;
+    }
+}
+
+// welcome.blade.php
+
+.welcome-title {
+    color: snow;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 220px;
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.welcome-btn {
+    justify-content: space-evenly;
+    padding: 0 500px;
+    padding-top: 50px;
+
+    .btn {
+        font-size: 1.5rem;
+        color: #000;
+        background-color: $main-color;
+        border-bottom: 5px solid #628fad;
+        display: inline-block;
+
+        &:hover {
+            margin-top: 3px;
+            color: #000;
+            background: $main-color;
+            border-bottom: 2px solid #628fad;
+        }
+    }
+}
