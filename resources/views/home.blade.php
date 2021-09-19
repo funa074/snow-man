@@ -1,7 +1,16 @@
 @extends('layouts.app')
 
+
 @section('content')
-<div class="container">
+<h1 class="welcome-title">スキー場を探す</h1>
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -19,5 +28,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 @endsection

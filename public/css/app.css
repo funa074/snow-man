@@ -10965,6 +10965,10 @@ li {
   justify-content: center;
 }
 
+.bg-blue {
+  background-color: #89c3eb;
+}
+
 .snow {
   color: snow;
   /*雪の色*/
