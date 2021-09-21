@@ -9,6 +9,7 @@
 
 // 配色
 $main-color: #89c3eb;
+// $main-color: #1d4a96;
 
 // 全体共通
 * {
@@ -16,6 +17,7 @@ $main-color: #89c3eb;
     padding: 0;
     box-sizing: border-box;
     background-color: #b0afb2;
+    // background-color: #cfdcf0;
 }
 
 html {
@@ -105,8 +107,19 @@ li {
 }
 
 // home
+.ski-resort-search {
+    color: #fff;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 80px;
+}
+
 .ski-resort-list {
+    margin-top: 50px;
+
     .ski-resort {
         color: #000;
+        font-size: 2rem;
+        line-height: 4rem;
     }
 }

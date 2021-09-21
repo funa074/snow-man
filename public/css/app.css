@@ -11036,7 +11036,20 @@ li {
   background-color: #89c3eb;
 }
 
+.ski-resort-search {
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 80px;
+}
+
+.ski-resort-list {
+  margin-top: 50px;
+}
+
 .ski-resort-list .ski-resort {
   color: #000;
+  font-size: 2rem;
+  line-height: 4rem;
 }
 
