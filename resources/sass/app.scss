@@ -61,7 +61,7 @@ li {
     }
 }
 
-// welcome.blade.php
+// welcome
 
 .welcome-title {
     color: snow;
@@ -102,4 +102,11 @@ li {
 // form
 .card {
     background-color: $main-color;
+}
+
+// home
+.ski-resort-list {
+    .ski-resort {
+        color: #000;
+    }
 }
