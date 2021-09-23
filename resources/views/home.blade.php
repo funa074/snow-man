@@ -10,6 +10,9 @@
     <a href="" class="flex ski-resort">ホワイトピアたかす</a>
     <a href="" class="flex ski-resort">高鷲スノーパーク</a>
     <a href="" class="flex ski-resort">ウィングヒルズ白鳥リゾート</a>
+    {{-- @foreach($ski_resorts as $ski_resort)
+                      {{$ski_resort->name}}
+    @endforeach --}}
 </div>
     
     {{-- <div class="container">
