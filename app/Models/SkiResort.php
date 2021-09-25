@@ -7,8 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class SkiResort extends Model
 {
     protected $fillable = [
-        "weather",
-        "temperature",
-        "snow_cover",
+        'name',
+        'weather',
+        'temperature',
+        'snow_cover',
     ];
 }

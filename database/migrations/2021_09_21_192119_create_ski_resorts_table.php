@@ -16,6 +16,7 @@ class CreateSkiResortsTable extends Migration
         Schema::create('ski_resorts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->string('name', 100);
             $table->string('weather', 100);
             $table->integer('temperature');
             $table->integer('snow_cover');
