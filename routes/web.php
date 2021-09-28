@@ -19,5 +19,5 @@ Auth::routes(['verify' => true]);
 
 Route::middleware('verified')->group(function () {
         Route::get('/home', 'HomeController@index')->name('home');
-        Route::get('/ski-resort', 'SkiResortController@index')->name('home');
+        Route::get('/ski-resort/{id}', 'SkiResortController@index')->name('ski-resort');
 });

@@ -1,3 +1,5 @@
 @extends('layouts.app')
 
-<h1>{{ $ski_resorts->name }}</h1>
+@section('content')
+<h1>{{ $ski_resort->name }}</h1>
+@endsection

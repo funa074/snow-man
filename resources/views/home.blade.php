@@ -32,4 +32,3 @@
     </div>
 </div> --}}
 @endsection
-{{-- <div class="snow">●</div>  --}}
