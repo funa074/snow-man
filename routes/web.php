@@ -11,6 +11,11 @@
 |
 */
 
+if(config('app.env') === 'production'){
+    // asset()やurl()がhttpsで生成される
+    URL::forceScheme('https');
+}
+
 Route::get('/', function () {
     return view('welcome');
 });
