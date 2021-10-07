@@ -26,3 +26,5 @@ Route::middleware('verified')->group(function () {
         Route::get('/home', 'HomeController@index')->name('home');
         Route::get('/ski-resort/{id}', 'SkiResortController@index')->name('ski-resort');
 });
+
+Route::get('/', 'WeatherAPIController@weatherData');

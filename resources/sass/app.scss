@@ -7,12 +7,6 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
-// 配色
-$main-color: #89c3eb;
-$sub-color1: #b0afb2;
-$sub-color2: #fff;
-// $main-color: #1d4a96;
-
 // 全体共通
 * {
     margin: 0;
@@ -130,4 +124,15 @@ li {
         font-size: 2rem;
         line-height: 4rem;
     }
+}
+
+// ski-resort
+.ski-resort {
+    color: $sub-color2;
+    text-align: center;
+}
+
+tr {
+    margin: 0 auto;
+    text-align: center;
 }

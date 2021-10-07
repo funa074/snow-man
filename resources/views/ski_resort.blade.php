@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>{{ $ski_resort->name }}</h1>
+<h1 class="ski-resort">{{ $ski_resort->name }}</h1>
 <tr>
   <td>天気</td>
   <td>{{ $ski_resort->weather }}</td>
