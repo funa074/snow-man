@@ -8,8 +8,7 @@ class SkiResort extends Model
 {
     protected $fillable = [
         'name',
-        'weather',
-        'temperature',
-        'snow_cover',
+        'lat',
+        'lon',
     ];
 }

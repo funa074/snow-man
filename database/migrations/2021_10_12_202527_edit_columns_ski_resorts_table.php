@@ -14,8 +14,8 @@ class EditColumnsSkiResortsTable extends Migration
     public function up()
     {
         Schema::table('ski_resorts', function (Blueprint $table) {
-            $table->integer('lat');
-            $table->integer('lon');
+            $table->decimal('lat', 9, 7);
+            $table->decimal('lon', 10, 7);
             $table->dropColumn(['weather', 'temperature', 'snow_cover']);
         });
     }
@@ -28,9 +28,9 @@ class EditColumnsSkiResortsTable extends Migration
     public function down()
     {
         Schema::table('ski_resorts', function (Blueprint $table) {
-            $table->string('weather', 100)->nullable(true)->change();
-            $table->integer('temperature')->nullable(true)->change();
-            $table->integer('snow_cover')->nullable(true)->change();
+            $table->string('weather', 100)->nullable(true);
+            $table->integer('temperature')->nullable(true);
+            $table->integer('snow_cover')->nullable(true);
             $table->dropColumn(['lat', 'lon']);
         });
     }

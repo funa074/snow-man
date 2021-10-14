@@ -15,8 +15,8 @@ class SkiResortController extends Controller
         $API_KEY = config('services.openweathermap.key'); // コンフィグファイル(config/)から特定の値を取得 ドット記法
         $base_url = config('services.openweathermap.url');
 
-        $lat = 35; // 緯度
-        $lon = 138; // 経度
+        $lat = $ski_resort->lat; // 緯度
+        $lon = $ski_resort->lon; // 経度
         $exclude = 'minutely,alerts'; // 除外するパラメーター
 
         $url = file_get_contents("$base_url/onecall?lat=$lat&lon=$lon&exclude=$exclude&units=metric&lang=ja&appid=$API_KEY"); // Webページの内容を読み込んでいる。
