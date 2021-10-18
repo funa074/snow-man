@@ -10946,6 +10946,7 @@ a.text-dark:focus {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #111111;
 }
 
 html {
@@ -10996,7 +10997,7 @@ li {
 }
 
 .return {
-  color: #000;
+  color: #111111;
   font-size: 2rem;
   text-align: center;
   display: block;
@@ -11026,7 +11027,7 @@ li {
 
 .welcome-btn .btn {
   font-size: 1.5rem;
-  color: #000;
+  color: #111111;
   background-color: #89c3eb;
   border-bottom: 5px solid #628fad;
   display: inline-block;
@@ -11063,7 +11064,7 @@ li {
 }
 
 .ski-resort-list .ski-resorts {
-  color: #000;
+  color: #111111;
   font-size: 2rem;
   line-height: 4rem;
 }
