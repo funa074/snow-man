@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="7Et-u0gL1dKw2_6GZPuL" name="ページ1">
-        <mxGraphModel dx="898" dy="680" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="1100" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -64,7 +64,7 @@
                 <mxCell id="70" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="68" vertex="1">
                     <mxGeometry x="40" width="140" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="71" value="skiing_histories" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fontColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+                <mxCell id="71" value="skiing_record" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fontColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="610" y="250" width="180" height="280" as="geometry"/>
                 </mxCell>
                 <mxCell id="72" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="71" vertex="1">
@@ -133,8 +133,8 @@
                 <mxCell id="101" value="updated_at" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="90" y="440" width="80" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="105" value="memo" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="660" y="380" width="50" height="20" as="geometry"/>
+                <mxCell id="105" value="text" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="380" width="30" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="106" value="&lt;span&gt;created_at&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="660" y="410" width="70" height="20" as="geometry"/>
@@ -184,7 +184,7 @@
                 <mxCell id="126" value="updated_at" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="660" y="755" width="80" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="176" value="skiing_history_users" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+                <mxCell id="176" value="skiing_record_users" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
                     <mxGeometry x="324" y="250" width="180" height="280" as="geometry">
                         <mxRectangle x="330" y="500" width="60" height="30" as="alternateBounds"/>
                     </mxGeometry>
