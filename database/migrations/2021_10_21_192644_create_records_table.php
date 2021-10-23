@@ -19,7 +19,7 @@ class CreateRecordsTable extends Migration
             $table->date('skiing_date')->comment('滑走日');
             $table->string('ski_resort', 30)->comment('スキー場名');
             $table->text('body')->comment('本文'); 
-            $table->string('image_file_name',100)->comment('画像ファイル名');
+            $table->string('image_file_name',100)->nullable()->comment('画像ファイル名');
             $table->timestamps();
         });
     }
