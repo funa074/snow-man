@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 use App\Notifications\ResetPassword;// 作ったResetPasswordをuseする
+use App\Models\Record;
 
 class User extends Authenticatable implements MustVerifyEmail // MustVerifyEmailをimplements
 {
