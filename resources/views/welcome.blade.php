@@ -18,7 +18,7 @@
 
     <div class="welcome-btn flex">
         <a href="{{ route('register') }}" class="btn">新規登録</a>
-        <a href="{{ route('login')}}" class="btn">ログイン</a>
+        <a href="{{ route('login') }}" class="btn">ログイン</a>
     </div>
 
     <div class="snow">●</div> 

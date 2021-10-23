@@ -11021,7 +11021,7 @@ li {
 
 .welcome-btn {
   justify-content: space-evenly;
-  padding: 0 500px;
+  padding: 0 31rem;
   padding-top: 50px;
 }
 
@@ -11086,5 +11086,42 @@ li {
 .ski-resort-table td {
   padding: 14px;
   background: snow;
+}
+
+.user-name {
+  text-align: center;
+  margin-top: 80px;
+  color: snow;
+  font-size: 3rem;
+}
+
+.center {
+  color: #111111;
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  margin-top: 80px;
+}
+
+.register-btn {
+  justify-content: space-evenly;
+  padding: 0 23rem;
+  padding-top: 80px;
+}
+
+.register-btn .btn {
+  font-size: 2rem;
+  color: #111111;
+  background-color: #89c3eb;
+  border-bottom: 5px solid #628fad;
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+.register-btn .btn:hover {
+  margin-top: 3px;
+  color: #000;
+  background: #89c3eb;
+  border-bottom: 2px solid #628fad;
 }
 
