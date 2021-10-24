@@ -62,5 +62,12 @@ class SkiResortsTableSeeder extends Seeder
             'lon'  => 136.8027196
         ]);
         $ski_resort_value->save();
+
+        $ski_resort_value = new \App\Models\SkiResort([
+            'name' => '横手山・渋峠スキー場',
+            'lat'  => 36.6701251,
+            'lon'  => 138.5274677
+        ]);
+        $ski_resort_value->save();
     }
 }
