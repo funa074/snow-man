@@ -16,8 +16,8 @@
   </tr>
 </table>
 <div class="register-btn flex">
-  <a href="" class="btn">滑走履歴を確認</a>
-  <a href="" class="btn">滑走情報を登録</a>
+  <a href="/record-list" class="btn">滑走履歴を確認</a>
+  <a href="/record-post" class="btn">滑走情報を登録</a>
 </div>
 <a href="/home" class="return">スキー場一覧に戻る</a>
 
