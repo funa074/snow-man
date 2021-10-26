@@ -188,3 +188,39 @@ li {
         }
     }
 }
+
+// record-post
+.record {
+    flex-direction: column;
+    font-size: 2rem;
+
+    .label {
+        margin: 10px 0 0;
+    }
+
+    dt {
+        p {
+            opacity: 0.6;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 1rem;
+            margin-bottom: 0;
+            font-size: 1.5rem;
+        }
+    }
+
+    dd {
+        width: 100%;
+        text-align: center;
+
+        .textarea {
+            width: 50%;
+            height: 175px;
+        }
+    }
+
+    .submit {
+        padding: 0.3rem;
+        margin-top: 10px;
+    }
+}

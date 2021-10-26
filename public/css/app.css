@@ -11123,3 +11123,36 @@ li {
   border-bottom: 2px solid #628fad;
 }
 
+.record {
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.record .label {
+  margin: 10px 0 0;
+}
+
+.record dt p {
+  opacity: 0.6;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+.record dd {
+  width: 100%;
+  text-align: center;
+}
+
+.record dd .textarea {
+  width: 50%;
+  height: 175px;
+}
+
+.record .submit {
+  padding: 0.3rem;
+  margin-top: 10px;
+}
+

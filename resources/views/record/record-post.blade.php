@@ -12,13 +12,13 @@
     <dd><input class="inputs" id="ski-resort" type="text" required="required" name="ski-resort"></dd>
   
     <dt><label class="label" for="text">本文</label></dt>
-    <dd><textarea class="inputs" id="text"  required="required"></textarea></dd>
+    <dd><textarea class="inputs textarea" id="text"  required="required"></textarea></dd>
   
-    <dt><label class="label" for="img">画像選択</label></dt>
+    <dt class="flex"><label class="label" for="img">画像選択</label><p>※任意</p></dt>
     <dd><input type="file" name="img" id="img" accept=".png,.jpg,.jpeg,image/png,image/jpg"></dd>
   
-    <input type="submit" value="登録する">
+    <input class="submit" type="submit" value="登録する">
 
-  </dl>    
+  </dl>
 </form>    
 @endsection
