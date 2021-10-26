@@ -15,6 +15,8 @@ class MyPageController extends Controller
 
         $records = $user->records; // 滑走履歴のデータを取得
 
-        return view('my_page', compact('user', 'records'));
+        $season_records_count = $records->whereBetween('created_at', ['2021-10-01', '2022-09-30'])->count();
+
+        return view('my_page', compact('user', 'records', 'season_records_count'));
     }
 }

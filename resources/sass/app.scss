@@ -148,28 +148,26 @@ li {
     border: solid 8px $main-color;
 
     td {
-        padding: 14px;
+        padding: 0.8rem;
         background: snow;
     }
 }
 
 // my-page
-.user-name {
+.my-page-table {
+    margin: 80px auto 0;
     text-align: center;
-    margin-top: 80px;
-    color: snow;
+    width: 55%;
     font-size: 3rem;
+    border: solid 8px $main-color;
+
+    td {
+        padding: 1rem;
+        background: snow;
+    }
 }
 
-.center {
-    color: $font-color1;
-    font-size: 2rem;
-    text-align: center;
-    display: block;
-    margin-top: 80px;
-}
-
-.register-btn {
+.my-page-btn {
     justify-content: space-evenly;
     padding: 0 23rem;
     padding-top: 80px;

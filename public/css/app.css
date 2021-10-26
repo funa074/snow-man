@@ -11084,32 +11084,30 @@ li {
 }
 
 .ski-resort-table td {
-  padding: 14px;
+  padding: 0.8rem;
   background: snow;
 }
 
-.user-name {
+.my-page-table {
+  margin: 80px auto 0;
   text-align: center;
-  margin-top: 80px;
-  color: snow;
+  width: 55%;
   font-size: 3rem;
+  border: solid 8px #89c3eb;
 }
 
-.center {
-  color: #111111;
-  font-size: 2rem;
-  text-align: center;
-  display: block;
-  margin-top: 80px;
+.my-page-table td {
+  padding: 1rem;
+  background: snow;
 }
 
-.register-btn {
+.my-page-btn {
   justify-content: space-evenly;
   padding: 0 23rem;
   padding-top: 80px;
 }
 
-.register-btn .btn {
+.my-page-btn .btn {
   font-size: 2rem;
   color: #111111;
   background-color: #89c3eb;
@@ -11118,7 +11116,7 @@ li {
   margin: 0 2rem;
 }
 
-.register-btn .btn:hover {
+.my-page-btn .btn:hover {
   margin-top: 3px;
   color: #000;
   background: #89c3eb;
