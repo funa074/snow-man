@@ -33,10 +33,15 @@ class RecordController extends Controller
         $id = Auth::id(); // 認証済みユーザーIDを代入
         $record_data = $request->only(['date', 'ski-resort', 'body', 'img']); // formから送られた値を連想配列で受け取り
 
-        DB::table('records')->insert(
-            ['user_id' => $id, 'date' => $record_data['date'], 'ski_resort' => $record_data['ski-resort'], 'body' => $record_data['body'], 'image_file_name' => $record_data['img']]
-        );
-        
+        $record_value = new \App\Models\Record([
+            'user_id'         => $id,
+            'date'            => $record_data['date'],
+            'ski_resort'      => $record_data['ski-resort'],
+            'body'            => $record_data['body'],
+            'image_file_name' => $record_data['img']
+        ]);
+        $record_value->save();
+
         return $record_data;
     }
 
