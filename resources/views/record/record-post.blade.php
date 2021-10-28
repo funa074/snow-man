@@ -12,7 +12,7 @@
     <dd><input class="inputs text" id="ski-resort" type="text" required="required" name="ski-resort"></dd>
   
     <dt><label class="label" for="text">本文</label><p class="any1">※任意</p></dt>
-    <dd><textarea class="inputs textarea" id="text"  required="required" name="body"></textarea></dd>
+    <dd><textarea class="inputs textarea" id="text" name="body"></textarea></dd>
   
     <dt><label class="label" for="img">画像選択</label><p class="any2">※任意</p></dt>
     <dd><input type="file" name="img" id="img" accept=".png,.jpg,.jpeg,image/png,image/jpg"></dd>
