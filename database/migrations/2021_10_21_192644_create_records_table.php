@@ -18,7 +18,7 @@ class CreateRecordsTable extends Migration
             $table->unsignedBigInteger('user_id')->comment('ユーザーID'); // 1対多リレーション（整数しか入らないのでunsignedBigIntegerを使用）
             $table->date('skiing_date')->comment('滑走日');
             $table->string('ski_resort', 30)->comment('スキー場名');
-            $table->text('body')->comment('本文'); 
+            $table->text('body')->nullable()->comment('本文'); 
             $table->string('image_file_name',100)->nullable()->comment('画像ファイル名');
             $table->timestamps();
         });
