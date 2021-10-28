@@ -11132,13 +11132,28 @@ li {
   margin: 10px 0 0;
 }
 
+.record dt {
+  position: relative;
+}
+
 .record dt p {
   opacity: 0.6;
-  text-align: center;
-  margin-top: 10px;
-  margin-left: 1rem;
-  margin-bottom: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.record dt .any1 {
+  position: absolute;
+  width: 100px;
+  top: 40%;
+  left: 70px;
+}
+
+.record dt .any2 {
+  position: absolute;
+  width: 100px;
+  top: 40%;
+  left: 135px;
 }
 
 .record dd {

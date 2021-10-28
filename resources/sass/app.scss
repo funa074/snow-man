@@ -199,13 +199,25 @@ li {
     }
 
     dt {
+        position: relative;
+
         p {
             opacity: 0.6;
-            text-align: center;
-            margin-top: 10px;
-            margin-left: 1rem;
-            margin-bottom: 0;
-            font-size: 1.5rem;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .any1 {
+            position: absolute;
+            width: 100px;
+            top: 40%;
+            left: 70px;
+        }
+        .any2 {
+            position: absolute;
+            width: 100px;
+            top: 40%;
+            left: 135px;
         }
     }
 
