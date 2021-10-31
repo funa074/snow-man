@@ -8,13 +8,11 @@
     <title>{{ config('app.name') }}</title>
 </head>
 <body>
-    <div class=welcome-top>
-        <h1 class="welcome-title">❄️ SNOW MAN ❄️</h1>
-        <p class="welcome-text">
-            ゲレンデの天気や気温、積もっている雪の量を確認したり<br>
-            自分の滑走履歴を記録しよう！
-        </p>
-    </div>
+    <h1 class="welcome-title">❄️ SNOW MAN ❄️</h1>
+    <p class="welcome-text">
+        ゲレンデの天気や気温、積もっている雪の量を確認したり<br>
+        自分の滑走履歴を記録しよう！
+    </p>
 
     <div class="welcome-btn flex">
         <a href="{{ route('register') }}" class="btn">新規登録</a>
