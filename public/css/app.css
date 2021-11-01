@@ -11035,7 +11035,7 @@ li {
 
 .welcome-btn .btn:hover {
   margin-top: 3px;
-  color: #000;
+  color: #111111;
   background: #89c3eb;
   border-bottom: 2px solid #628fad;
 }
@@ -11118,7 +11118,7 @@ li {
 
 .my-page-btn .btn:hover {
   margin-top: 3px;
-  color: #000;
+  color: #111111;
   background: #89c3eb;
   border-bottom: 2px solid #628fad;
 }
