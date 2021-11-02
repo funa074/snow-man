@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Models\Record;
 
 class RecordController extends Controller
 {
@@ -14,13 +15,15 @@ class RecordController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('record/record-list');
+    {   
+        $record_values = Record::all(); // データベースからrecordsテーブルにある全データを抽出(collection)
+
+        return view('record/record_list', compact('record_values'));
     }
 
     public function record_post()
     {
-        return view('record/record-post');
+        return view('record/record_post');
     }
 
     /**
@@ -31,18 +34,22 @@ class RecordController extends Controller
     public function create(Request $request)
     {   
         $id = Auth::id(); // 認証済みユーザーIDを代入
-        $record_data = $request->only(['date', 'ski-resort', 'body', 'img']); // formから送られた値を連想配列で受け取り
 
-        $record_value = new \App\Models\Record([
+        $record_data = $request->only(['date', 'ski-resort', 'body']); // formから送られた値を連想配列で受け取り
+
+        $path = $request->img->store('public/img'); // /storage/app/public/imgにアップロードファイルを保存
+        $image_filename = basename($path); // パスから最後の「ファイル名.拡張子」の部分だけ取得
+
+        $record_values = new \App\Models\Record([
             'user_id'         => $id,
             'date'            => $record_data['date'],
             'ski_resort'      => $record_data['ski-resort'],
             'body'            => $record_data['body'],
-            'image_file_name' => $record_data['img']
+            'image_file_name' => $image_filename
         ]);
-        $record_value->save();
+        $record_values->save();
 
-        return $record_data;
+        return redirect('record-list');
     }
 
     /**
