@@ -189,7 +189,7 @@ li {
     }
 }
 
-// record-post
+// record_post
 .record {
     flex-direction: column;
     font-size: 2rem;
@@ -234,5 +234,48 @@ li {
     .submit {
         padding: 0.3rem;
         margin-top: 10px;
+    }
+}
+
+// record_list
+.records-link:hover {
+    text-decoration: none;
+}
+
+.records-list {
+    width: 70%;
+    margin: 0 auto 15px;
+    border: 2px solid gray;
+    padding: 1rem 1.5rem;
+    background-color: #f2f2f2;
+
+    &:hover {
+        background-color: gainsboro;
+    }
+}
+
+.records-img {
+    width: 19rem;
+    height: 13rem;
+    border-radius: 5%;
+}
+
+.records-table {
+    margin-left: 2rem;
+
+    .records-ski-resort {
+        font-size: 2rem;
+    }
+
+    .records-date {
+        font-size: 1.25rem;
+    }
+
+    .records-body {
+        font-size: 1rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
     }
 }
