@@ -36,7 +36,7 @@ class SkiResortController extends Controller
         }
 
         if (isset($weather_data['daily'][0]['snow'])) {
-            $ski_resort_snow_cover = $weather_data['daily'][0]['snow']; // 積雪量
+            $ski_resort_snow_cover = round($weather_data['daily'][0]['snow']); // 積雪量
         } else {
             $ski_resort_snow_cover = '-';
         }
