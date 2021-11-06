@@ -4,9 +4,9 @@
 
 @foreach($record_values as $record_value)
     <article class="records-list">
-        <a href="/record/{id}" class="records-link flex">
+        <a href="/record/{{ $record_value->id }}" class="records-link flex">
             <div class="records-img-wrap">
-                <img class="records-img" src="storage/img/{{ $record_value->image_file_name }}" alt="">
+                <img class="records-img" src="{{ asset("storage/img/".$record_value->image_file_name) }}" />
             </div>
             <div class="records-table">
                 <p class="records-ski-resort">{{ $record_value->ski_resort }}</p>

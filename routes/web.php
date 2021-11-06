@@ -29,4 +29,5 @@ Route::middleware('verified')->group(function () {
     Route::get('/record-list', 'RecordController@index')->name('record-list');
     Route::get('/record-post', 'RecordController@record_post')->name('record-post');
     Route::post('/record-create', 'RecordController@create')->name('record-create');
+    Route::get('/record/{id}', 'RecordController@show')->name('record');
 });

@@ -80,8 +80,10 @@ class RecordController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        return view('records/record');
+    {   
+        $record_values = Record::find($id);
+
+        return view('records/record', compact('record_values'));
     }
 
     /**

@@ -3,7 +3,7 @@
 @section('content')
 <form action="/record-create" method="post" enctype="multipart/form-data">
   @csrf
-  <dl class="record flex">
+  <dl class="record-post flex">
 
     <dt><label class="label" for="date">滑走日</label></dt>
     <dd><input class="inputs date" id="date" type="date" required="required" name="date"></dd>

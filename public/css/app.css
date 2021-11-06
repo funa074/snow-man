@@ -11123,50 +11123,50 @@ li {
   border-bottom: 2px solid #628fad;
 }
 
-.record {
+.record-post {
   flex-direction: column;
   font-size: 2rem;
 }
 
-.record .label {
+.record-post .label {
   margin: 10px 0 0;
 }
 
-.record dt {
+.record-post dt {
   position: relative;
 }
 
-.record dt p {
+.record-post dt p {
   opacity: 0.6;
   font-size: 1rem;
   margin: 0;
 }
 
-.record dt .any1 {
+.record-post dt .any1 {
   position: absolute;
   width: 100px;
   top: 40%;
   left: 70px;
 }
 
-.record dt .any2 {
+.record-post dt .any2 {
   position: absolute;
   width: 100px;
   top: 40%;
   left: 135px;
 }
 
-.record dd {
+.record-post dd {
   width: 100%;
   text-align: center;
 }
 
-.record dd .textarea {
+.record-post dd .textarea {
   width: 50%;
   height: 175px;
 }
 
-.record .submit {
+.record-post .submit {
   padding: 0.3rem;
   margin-top: 10px;
 }
@@ -11219,5 +11219,36 @@ li {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+}
+
+.record {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.record .record-date {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+.record .record-ski-resort {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.record .record-img {
+  width: 80%;
+  text-align: center;
+  border-radius: 1%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.record .record-body {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
