@@ -294,6 +294,7 @@ li {
     background-color: #f2f2f2;
 
     .record-date {
+        padding-top: 16px;
         margin-left: 1rem;
         font-size: 2rem;
     }
@@ -309,12 +310,13 @@ li {
         border-radius: 1%;
         display: block;
         margin: 0 auto;
-        margin-bottom: 32px;
+        margin-bottom: 48px;
     }
 
     .record-body {
         font-size: 1.5rem;
-        width: 80%;
+        width: 65%;
         margin: 0 auto;
+        padding-bottom: 48px;
     }
 }
