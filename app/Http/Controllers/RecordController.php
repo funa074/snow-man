@@ -18,12 +18,12 @@ class RecordController extends Controller
     {   
         $record_values = Record::all(); // データベースからrecordsテーブルにある全データを抽出(collection)
 
-        return view('record/record_list', compact('record_values'));
+        return view('records/record_list', compact('record_values'));
     }
 
     public function record_post()
     {
-        return view('record/record_post');
+        return view('records/record_post');
     }
 
     /**
@@ -81,7 +81,7 @@ class RecordController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('records/record');
     }
 
     /**
