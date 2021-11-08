@@ -6,5 +6,14 @@
     <p class="record-ski-resort">{{ $record_values->ski_resort }}</p>
     <img class="record-img" src="{{ asset("storage/img/".$record_values->image_file_name) }}" />
     <p class="record-body">{{ $record_values->body }}</p>
+
+    <div class="record-btn-wrapper flex">
+      <a href="/record-list" class="btn back btn-outline-primary">戻る</a>
+      <a href="/record-edit/{{ $record_values->id }}" class="btn edit btn-outline-primary">編集</a>
+      <form action="/record_destroy" method="POST">
+        @csrf
+        <input type="submit" onclick='return confirm("削除しますか？");' value="削除" class="btn destroy btn-outline-primary">
+      </form>
+    </div>
   </article>
 @endsection

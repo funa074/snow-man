@@ -11251,6 +11251,44 @@ li {
   font-size: 1.5rem;
   width: 65%;
   margin: 0 auto;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
+}
+
+.record .record-btn-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 16px;
+}
+
+.record .record-btn-wrapper .back {
+  margin-right: auto;
+  background-color: gray;
+  color: #fff;
+  border-color: #111111;
+}
+
+.record .record-btn-wrapper .back:hover {
+  opacity: 70%;
+}
+
+.record .record-btn-wrapper .edit {
+  background-color: blue;
+  color: #fff;
+  border-color: #111111;
+  margin-right: 1rem;
+}
+
+.record .record-btn-wrapper .edit:hover {
+  opacity: 70%;
+}
+
+.record .record-btn-wrapper .destroy {
+  background-color: red;
+  color: #fff;
+  border-color: #111111;
+}
+
+.record .record-btn-wrapper .destroy:hover {
+  opacity: 70%;
 }
 
