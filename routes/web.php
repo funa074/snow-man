@@ -30,4 +30,6 @@ Route::middleware('verified')->group(function () {
     Route::get('/record-post', 'RecordController@record_post')->name('record-post');
     Route::post('/record-create', 'RecordController@create')->name('record-create');
     Route::get('/record/{id}', 'RecordController@show')->name('record');
+    Route::get('/record-edit/{id}', 'RecordController@edit')->name('record');
+    Route::put('/record-update/{id}', 'RecordController@update')->name('record');
 });

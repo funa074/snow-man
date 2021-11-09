@@ -94,7 +94,12 @@ class RecordController extends Controller
      */
     public function edit($id)
     {
-        //
+        $record_values = Record::find($id);
+        
+        if (auth()->user()->id !== $record_values->user_id) {
+            return redirect('record-list')->with('error', '許可されていない操作です');
+        }
+        return view('records/record_edit', compact('record_values'));
     }
 
     /**
@@ -106,7 +111,32 @@ class RecordController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $record = Record::find($id); // recordsテーブルからidカラムの値を取得
+        $user_id = Auth::id(); // 認証済みユーザーIDを代入
+
+        $record_data = $request->only(['date', 'ski-resort', 'body']); // formから送られた値を連想配列で受け取り
+
+        if ($request->hasFile('img')) {
+            $path = $request->img->store('public/img'); // /storage/app/public/imgにアップロードファイルを保存
+            $image_filename = basename($path); // パスから最後の「ファイル名.拡張子」の部分だけ取得
+
+            $record->update([
+                'user_id'         => $user_id,
+                'date'            => $record_data['date'],
+                'ski_resort'      => $record_data['ski-resort'],
+                'body'            => $record_data['body'],
+                'image_file_name' => $image_filename
+            ]);
+        } else {
+            $record->update([
+                'user_id'         => $user_id,
+                'date'            => $record_data['date'],
+                'ski_resort'      => $record_data['ski-resort'],
+                'body'            => $record_data['body']
+            ]);
+        }
+        
+        return redirect('record-list');
     }
 
     /**
