@@ -24,7 +24,7 @@ class SkiResortController extends Controller
         $weather_data = json_decode($url, true); // JSON文字列をデコード 第2引数をtrueにして連想配列形式のオブジェクトを返している。
         
         if (isset($weather_data['current']['weather'][0]['description'])) {
-            $ski_resort_weather = $weather_data['current']['weather'][0]['description']; // 現在の天気
+            $ski_resort_weather = $weather_data['current']['weather'][0]['main']; // 現在の天気
         } else {
             $ski_resort_weather = '-';
         }
