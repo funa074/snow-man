@@ -213,6 +213,7 @@ li {
             top: 40%;
             left: 70px;
         }
+
         .any2 {
             position: absolute;
             width: 100px;
@@ -232,8 +233,53 @@ li {
     }
 
     .submit {
-        padding: 0.3rem;
+        padding: 1px 0.5rem;
         margin-top: 10px;
+    }
+}
+
+// record_edit
+.record-post {
+    .record-img {
+        margin-top: 28px;
+
+        &.active {
+            display: none;
+        }
+
+        img {
+            border-radius: 1%;
+        }
+    }
+
+    .img-input-hidden {
+        display: none;
+
+        &.active {
+            display: inline;
+            text-align: center;
+
+            .any2 {
+                left: 370px;
+            }
+        }
+    }
+
+    .img-change {
+        padding: 1px 0.5rem;
+    }
+
+    .img-input {
+        text-align: center;
+
+        .any2 {
+            left: 370px;
+        }
+    }
+
+    .edit-submit {
+        padding: 1px 0.5rem;
+        margin-top: 28px;
     }
 }
 

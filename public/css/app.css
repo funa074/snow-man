@@ -11167,8 +11167,50 @@ li {
 }
 
 .record-post .submit {
-  padding: 0.3rem;
+  padding: 1px 0.5rem;
   margin-top: 10px;
+}
+
+.record-post .record-img {
+  margin-top: 28px;
+}
+
+.record-post .record-img.active {
+  display: none;
+}
+
+.record-post .record-img img {
+  border-radius: 1%;
+}
+
+.record-post .img-input-hidden {
+  display: none;
+}
+
+.record-post .img-input-hidden.active {
+  display: inline;
+  text-align: center;
+}
+
+.record-post .img-input-hidden.active .any2 {
+  left: 370px;
+}
+
+.record-post .img-change {
+  padding: 1px 0.5rem;
+}
+
+.record-post .img-input {
+  text-align: center;
+}
+
+.record-post .img-input .any2 {
+  left: 370px;
+}
+
+.record-post .edit-submit {
+  padding: 1px 0.5rem;
+  margin-top: 28px;
 }
 
 .records-list {
