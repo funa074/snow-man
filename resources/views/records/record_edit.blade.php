@@ -41,8 +41,8 @@
   window.addEventListener("DOMContentLoaded", () => { // ページの読み込みが終わったら実行
     const button = document.querySelector("#img-change");
     button.addEventListener("click", () => {
-      const img = document.querySelector(".record-img");
-      img.classList.add("active");
+      const recordImg = document.querySelector(".record-img");
+      recordImg.classList.add("hidden");
       const imgInput = document.querySelector(".img-input-hidden");
       imgInput.classList.add("active");
     })

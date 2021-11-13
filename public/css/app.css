@@ -11175,7 +11175,7 @@ li {
   margin-top: 28px;
 }
 
-.record-post .record-img.active {
+.record-post .record-img.hidden {
   display: none;
 }
 
