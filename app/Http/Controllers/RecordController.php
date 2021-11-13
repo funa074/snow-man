@@ -147,6 +147,8 @@ class RecordController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $record = Record::find($id);
+        $record->delete();
+        return redirect('record-list');
     }
 }

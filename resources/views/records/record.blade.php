@@ -10,8 +10,9 @@
     <div class="record-btn-wrapper flex">
       <a href="/record-list" class="btn back btn-outline-primary">戻る</a>
       <a href="/record-edit/{{ $record_values->id }}" class="btn edit btn-outline-primary">編集</a>
-      <form action="/record_destroy" method="POST">
+      <form action="/record-delete/{{ $record_values->id }}" method="POST">
         @csrf
+        @method('DELETE')
         <input type="submit" onclick='return confirm("削除しますか？");' value="削除" class="btn destroy btn-outline-primary">
       </form>
     </div>
