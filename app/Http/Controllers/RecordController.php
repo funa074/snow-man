@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Models\Record;
 
+use Illuminate\Support\Facades\Log;
+
 class RecordController extends Controller
 {
     /**
@@ -34,13 +36,14 @@ class RecordController extends Controller
     public function create(Request $request)
     {   
         $id = Auth::id(); // 認証済みユーザーIDを代入
-
+        
         $record_data = $request->only(['date', 'ski-resort', 'body']); // formから送られた値を連想配列で受け取り
-
+        
         if ($request->hasFile('img')) {
+            Log::debug('ファイルがあります');
             $path = $request->img->store('public/img'); // /storage/app/public/imgにアップロードファイルを保存
             $image_filename = basename($path); // パスから最後の「ファイル名.拡張子」の部分だけ取得
-
+            
             $record_values = new \App\Models\Record([
                 'user_id'         => $id,
                 'date'            => $record_data['date'],
@@ -50,6 +53,7 @@ class RecordController extends Controller
             ]);
             $record_values->save();           
         } else {
+            Log::debug('ファイルがありません');
             $record_values = new \App\Models\Record([
                 'user_id'         => $id,
                 'date'            => $record_data['date'],
@@ -119,7 +123,7 @@ class RecordController extends Controller
         if ($request->hasFile('img')) {
             $path = $request->img->store('public/img'); // /storage/app/public/imgにアップロードファイルを保存
             $image_filename = basename($path); // パスから最後の「ファイル名.拡張子」の部分だけ取得
-
+            
             $record->update([
                 'user_id'         => $user_id,
                 'date'            => $record_data['date'],
