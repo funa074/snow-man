@@ -56,7 +56,16 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('my-page') }}">
-                                        {{ __('マイページへ') }}
+                                        {{ __('マイページ') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('home') }}">
+                                        {{ __('スキー場一覧') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('record-list') }}">
+                                        {{ __('滑走履歴') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('record-create') }}">
+                                        {{ __('滑走情報を登録') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
