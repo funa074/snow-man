@@ -21,11 +21,6 @@ class RecordController extends Controller
         return view('records/record_list', compact('record_values'));
     }
 
-    public function record_post()
-    {
-        return view('records/record_post');
-    }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -33,6 +28,17 @@ class RecordController extends Controller
      */
     public function create(Request $request)
     {   
+        return view('records/record_post');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
         $id = Auth::id(); // 認証済みユーザーIDを代入
         
         $record_data = $request->only(['date', 'ski-resort', 'body']); // formから送られた値を連想配列で受け取り
@@ -60,17 +66,6 @@ class RecordController extends Controller
         }
         
         return redirect('record-list');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
     }
 
     /**

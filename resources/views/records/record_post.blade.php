@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<form action="/record-create" method="post" enctype="multipart/form-data">
+<form action="/record-store" method="POST" enctype="multipart/form-data">
   @csrf
   <dl class="record-post flex">
 

@@ -27,8 +27,8 @@ Route::middleware('verified')->group(function () {
     Route::get('/ski-resort/{id}', 'SkiResortController@index')->name('ski-resort');
     Route::get('/my-page', 'MyPageController@index')->name('my-page');
     Route::get('/record-list', 'RecordController@index')->name('record-list');
-    Route::get('/record-post', 'RecordController@record_post')->name('record-post');
-    Route::post('/record-create', 'RecordController@create')->name('record-create');
+    Route::get('/record-create', 'RecordController@create')->name('record-create');
+    Route::post('/record-store', 'RecordController@store')->name('record-store');
     Route::get('/record/{id}', 'RecordController@show')->name('record');
     Route::get('/record-edit/{id}', 'RecordController@edit')->name('edit');
     Route::put('/record-update/{id}', 'RecordController@update')->name('update');
