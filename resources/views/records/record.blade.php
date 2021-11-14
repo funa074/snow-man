@@ -7,6 +7,8 @@
 
     @if (!empty($record_values->image_file_name))
       <img class="record-img" src="{{ asset("storage/img/".$record_values->image_file_name) }}" />
+    @else
+      <img class="record-img" src="{{ asset('img/noimage.jpg') }}" />
     @endif
     <p class="record-body">{{ $record_values->body }}</p>
 
