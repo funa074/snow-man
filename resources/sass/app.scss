@@ -207,14 +207,32 @@ li {
             margin: 0;
         }
 
-        .any1 {
+        .mandatory-date {
+            color: red;
+            font-size: 1.25rem;
+            position: absolute;
+            width: 100px;
+            top: 35%;
+            left: 100px;
+        }
+
+        .mandatory-ski-resort {
+            color: red;
+            font-size: 1.25rem;
+            position: absolute;
+            width: 100px;
+            top: 35%;
+            left: 165px;
+        }
+
+        .any-text {
             position: absolute;
             width: 100px;
             top: 40%;
             left: 70px;
         }
 
-        .any2 {
+        .any-img {
             position: absolute;
             width: 100px;
             top: 40%;
@@ -240,6 +258,26 @@ li {
 
 // record_edit
 .record-post {
+    dt {
+        .mandatory-date {
+            color: red;
+            font-size: 1.25rem;
+            position: absolute;
+            width: 100px;
+            top: 35%;
+            left: 100px;
+        }
+
+        .mandatory-ski-resort {
+            color: red;
+            font-size: 1.25rem;
+            position: absolute;
+            width: 100px;
+            top: 35%;
+            left: 165px;
+        }
+    }
+
     .record-img {
         margin-top: 28px;
 
@@ -259,7 +297,7 @@ li {
             display: inline;
             text-align: center;
 
-            .any2 {
+            .any-img {
                 left: 370px;
             }
         }
@@ -272,7 +310,7 @@ li {
     .img-input {
         text-align: center;
 
-        .any2 {
+        .any-img {
             left: 370px;
         }
     }
