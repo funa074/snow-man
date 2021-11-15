@@ -16,7 +16,7 @@ class RecordController extends Controller
      */
     public function index()
     {   
-        $record_values = Record::all(); // データベースからrecordsテーブルにある全データを抽出(collection)
+        $record_values = Record::latest('date')->get(); // recordsテーブルにある全データを日付順で抽出(collection)
 
         return view('records/record_list', compact('record_values'));
     }
