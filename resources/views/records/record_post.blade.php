@@ -9,10 +9,10 @@
     <dd><input class="inputs date" id="date" type="date" required="required" name="date"></dd>
   
     <dt><label class="label" for="ski-resort">スキー場名</label><p class="mandatory-ski-resort">*</p></dt>
-    <dd><input class="inputs text" id="ski-resort" type="text" required="required" name="ski-resort"></dd>
+    <dd><input class="inputs text" id="ski-resort" type="text" required="required" name="ski-resort" maxlength="30"></dd>
   
     <dt><label class="label" for="text">本文</label><p class="any-text">※任意</p></dt>
-    <dd><textarea class="inputs textarea" id="text" name="body"></textarea></dd>
+    <dd><textarea class="inputs textarea" id="text" name="body" maxlength="21845"></textarea></dd>
   
     <dt><label class="label" for="img">画像選択</label><p class="any-img">※任意</p></dt>
     <dd><input type="file" name="img" id="img" accept=".png,.jpg,.jpeg,image/png,image/jpg"></dd>
