@@ -4,11 +4,25 @@
 <h1 class="ski-resort">{{ $ski_resort->name }}</h1>
 <table  class="ski-resort-table">
   <tr>
-    <td>天気</td>
-    <td>{{ $ski_resort_weather }}</td>
+    <td>現在の天気</td>
+    <td>
+      @if ($ski_resort_weather === 'Clear') 
+        晴れ
+      @elseif ($ski_resort_weather === 'Clouds')
+        くもり
+      @elseif ($ski_resort_weather === 'Rain')
+        雨
+      @elseif ($ski_resort_weather === 'Drizzle')
+        小雨  
+      @elseif ($ski_resort_weather === 'Thunderstorm')
+        雷雨
+      @elseif ($ski_resort_weather === 'Snow')
+        雪
+      @endif
+    </td>
   </tr>
   <tr>
-    <td>気温</td>
+    <td>日中の気温</td>
     <td>{{ $ski_resort_temp }}℃</td>
   </tr>
   <tr>
