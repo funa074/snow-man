@@ -23,7 +23,13 @@
   </tr>
   <tr>
     <td>日中の気温</td>
-    <td>{{ $ski_resort_temp }}℃</td>
+    <td>
+      @if ($ski_resort_temp === -0)
+        0℃
+      @else
+        {{ $ski_resort_temp }}℃
+      @endif
+    </td>
   </tr>
   <tr>
     <td>積雪量</td>
