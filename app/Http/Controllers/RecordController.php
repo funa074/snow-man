@@ -16,7 +16,8 @@ class RecordController extends Controller
      */
     public function index()
     {   
-        $record_values = Record::latest('date')->get(); // recordsテーブルにある全データを日付順で抽出(collection)
+        $id = Auth::id(); // 認証済みユーザーIDを代入
+        $record_values = Record::where('user_id', $id)->latest('date')->get(); // user_idカラムと$idが一致する投稿を日付順で取得
 
         return view('records/record_list', compact('record_values'));
     }
