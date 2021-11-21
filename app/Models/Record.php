@@ -18,4 +18,12 @@ class Record extends Model
     public function user() {
         return $this->belongsTo("App\Models\User");
     }
+
+    public function getImageFullPathAttribute() {
+        if ($this->image_file_name) {
+            return "storage/img/".$this->image_file_name;
+        } else {
+            return "img/noimage.jpg";
+        } 
+    }
 }

@@ -6,11 +6,7 @@
     <article class="records-list">
         <a href="/record/{{ $record_value->id }}" class="records-link flex">
             <div class="records-img-wrap">
-                @empty($record_value->image_file_name)
-                    <img class="records-img" src="{{ asset('img/noimage.jpg') }}" />
-                @else
-                    <img class="records-img" src="{{ asset("storage/img/".$record_value->image_file_name) }}" />
-                @endempty
+                <img class="records-img" src="{{ asset($record_value->image_full_path) }}" />
             </div>
             <div class="records-table">
                 <p class="records-ski-resort">{{ $record_value->ski_resort }}</p>
