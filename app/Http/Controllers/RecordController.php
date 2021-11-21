@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Models\Record;
+use App\Http\Requests\RecordRequest;
 
 class RecordController extends Controller
 {
@@ -38,12 +39,14 @@ class RecordController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(RecordRequest $request)
     {
         $id = Auth::id(); // 認証済みユーザーIDを代入
         
-        $record_data = $request->only(['date', 'ski-resort', 'body']); // formから送られた値を連想配列で受け取り
+        $record_data = $request->only(['date', 'ski_resort', 'body']); // formから送られた値を連想配列で受け取り
         
+        $date = $request->ski_resort;
+
         if ($request->hasFile('img')) {
             $path = $request->img->store('public/img'); // /storage/app/public/imgにアップロードファイルを保存
             $image_filename = basename($path); // パスから最後の「ファイル名.拡張子」の部分だけ取得
@@ -51,7 +54,7 @@ class RecordController extends Controller
             $record_values = new \App\Models\Record([
                 'user_id'         => $id,
                 'date'            => $record_data['date'],
-                'ski_resort'      => $record_data['ski-resort'],
+                'ski_resort'      => $record_data['ski_resort'],
                 'body'            => $record_data['body'],
                 'image_file_name' => $image_filename
             ]);
@@ -60,7 +63,7 @@ class RecordController extends Controller
             $record_values = new \App\Models\Record([
                 'user_id'         => $id,
                 'date'            => $record_data['date'],
-                'ski_resort'      => $record_data['ski-resort'],
+                'ski_resort'      => $record_data['ski_resort'],
                 'body'            => $record_data['body']
             ]);
             $record_values->save();
@@ -105,12 +108,12 @@ class RecordController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(RecordRequest $request, $id)
     {
         $record = Record::find($id); // recordsテーブルからidカラムの値を取得
         $user_id = Auth::id(); // 認証済みユーザーIDを代入
 
-        $record_data = $request->only(['date', 'ski-resort', 'body']); // formから送られた値を連想配列で受け取り
+        $record_data = $request->only(['date', 'ski_resort', 'body']); // formから送られた値を連想配列で受け取り
 
         if ($request->hasFile('img')) {
             $path = $request->img->store('public/img'); // /storage/app/public/imgにアップロードファイルを保存
@@ -119,7 +122,7 @@ class RecordController extends Controller
             $record->update([
                 'user_id'         => $user_id,
                 'date'            => $record_data['date'],
-                'ski_resort'      => $record_data['ski-resort'],    
+                'ski_resort'      => $record_data['ski_resort'],    
                 'body'            => $record_data['body'],
                 'image_file_name' => $image_filename
             ]);
@@ -127,7 +130,7 @@ class RecordController extends Controller
             $record->update([
                 'user_id'         => $user_id,
                 'date'            => $record_data['date'],
-                'ski_resort'      => $record_data['ski-resort'],
+                'ski_resort'      => $record_data['ski_resort'],
                 'body'            => $record_data['body']
             ]);
         }

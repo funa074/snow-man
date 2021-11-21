@@ -10,7 +10,7 @@ return [
     'alpha_dash'           => ':attributeには英数字・ハイフン・アンダースコアのみからなる文字列を指定してください。',
     'alpha_num'            => ':attributeには英数字のみからなる文字列を指定してください。',
     'array'                => ':attributeには配列を指定してください。',
-    'before'               => ':attributeには:date以前の日付を指定してください。',
+    'before'               => '※:attributeに未来の日付を入力することは出来ません。',
     'before_or_equal'      => ':attributeには:dateかそれ以前の日付を指定してください。',
     'between'              => [
         'numeric' => ':attributeには:min〜:maxまでの数値を指定してください。',
@@ -20,7 +20,7 @@ return [
     ],
     'boolean'              => ':attributeには真偽値を指定してください。',
     'confirmed'            => ':attributeが確認用の値と一致しません。',
-    'date'                 => ':attributeには正しい形式の日付を指定してください。',
+    'date'                 => ':attributeには正しい形式の日付を入力してください。',
     'date_format'          => '":format"という形式の日付を指定してください。',
     'different'            => ':attributeには:otherとは異なる値を指定してください。',
     'digits'               => ':attributeには:digits桁の数値を指定してください。',
@@ -42,7 +42,7 @@ return [
     'max'                  => [
         'numeric' => ':attributeには:max以下の数値を指定してください。',
         'file'    => ':attributeには:max KB以下のファイルを指定してください。',
-        'string'  => ':attributeには:max文字以下の文字列を指定してください。',
+        'string'  => ':attributeは:max文字以内で入力してください。',
         'array'   => ':attributeには:max個以下の要素を持つ配列を指定してください。',
     ],
     'mimes'                => ':attributeには:valuesのうちいずれかの形式のファイルを指定してください。',
@@ -57,7 +57,7 @@ return [
     'numeric'              => ':attributeには数値を指定してください。',
     'present'              => ':attributeには現在時刻を指定してください。',
     'regex'                => '正しい形式の:attributeを指定してください。',
-    'required'             => ':attributeは必須です。',
+    'required'             => ':attributeの入力は必須です。',
     'required_if'          => ':otherが:valueの時:attributeは必須です。',
     'required_unless'      => ':otherが:values以外の時:attributeは必須です。',
     'required_with'        => ':valuesのうちいずれかが指定された時:attributeは必須です。',
@@ -106,8 +106,11 @@ return [
     */
 
     'attributes' => [
-        'email' => 'メールアドレス',
-     'password' => 'パスワード',
+        'email'      => 'メールアドレス',
+        'password'   => 'パスワード',
+        'date'       => '滑走日',
+        'ski_resort' => 'スキー場名', 
+        'body'       => '本文'    
     ],
 
 ];
