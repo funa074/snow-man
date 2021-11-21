@@ -30,4 +30,13 @@ class RecordRequest extends FormRequest
             'image_file_name' => 'nullable | image'
         ];
     }
+    
+    public function attributes()
+    {
+        return [
+            'date'       => '滑走日',
+            'ski_resort' => 'スキー場名',
+            'body'       => '本文'  
+        ];
+    }
 }

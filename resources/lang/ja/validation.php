@@ -107,10 +107,7 @@ return [
 
     'attributes' => [
         'email'      => 'メールアドレス',
-        'password'   => 'パスワード',
-        'date'       => '滑走日',
-        'ski_resort' => 'スキー場名', 
-        'body'       => '本文'    
+        'password'   => 'パスワード', 
     ],
 
 ];
