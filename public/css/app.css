@@ -11221,6 +11221,19 @@ li {
   border-radius: 1%;
 }
 
+.record-post .img-button-Wrapper {
+  flex-direction: column;
+}
+
+.record-post .img-button {
+  font-size: 1.5rem;
+  padding: 1px 0.5rem;
+  width: 12rem;
+  margin-left: 3rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .record-post .img-input-hidden {
   display: none;
 }
@@ -11232,10 +11245,6 @@ li {
 
 .record-post .img-input-hidden.active .any-img {
   left: 370px;
-}
-
-.record-post .img-change {
-  padding: 1px 0.5rem;
 }
 
 .record-post .img-input {

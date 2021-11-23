@@ -292,6 +292,19 @@ li {
         }
     }
 
+    .img-button-Wrapper {
+        flex-direction: column;
+    }
+
+    .img-button {
+        font-size: 1.5rem;
+        padding: 1px 0.5rem;
+        width: 12rem;
+        margin-left: 3rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
     .img-input-hidden {
         display: none;
 
@@ -303,10 +316,6 @@ li {
                 left: 370px;
             }
         }
-    }
-
-    .img-change {
-        padding: 1px 0.5rem;
     }
 
     .img-input {

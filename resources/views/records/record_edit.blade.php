@@ -22,9 +22,16 @@
     <dd><textarea class="inputs textarea" id="text" name="body" maxlength="21845">{{ $record_values->body }}</textarea></dd>
     
     @if ( !empty( $record_values->image_file_name ))
-      <div class="record-img">
+      <div class="record-img flex">
         <img src="{{ asset("storage/img/".$record_values->image_file_name) }}" alt="" style="width: 300px">
-        <button id="img-change" class="img-change" type="button">画像を変更する</button>
+        <div class="flex img-button-Wrapper">
+          <button id="img-change" class="img-button" type="button">画像を変更</button>
+          <form action="" method="post">
+            @method('delete')
+            @csrf
+            <button class="img-button" type="submit" onclick='return confirm("画像を削除しますか？");'>画像を削除</button>
+          </form>
+        </div>
       </div>
       
       <div class="img-input-hidden">
