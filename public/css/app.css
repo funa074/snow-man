@@ -11061,12 +11061,14 @@ li {
 
 .ski-resort-list {
   margin-top: 50px;
+  text-align: center;
 }
 
 .ski-resort-list .ski-resorts {
   color: #111111;
   font-size: 2rem;
-  line-height: 4rem;
+  line-height: 80px;
+  display: inline;
 }
 
 .ski-resort {

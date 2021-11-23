@@ -125,11 +125,13 @@ li {
 
 .ski-resort-list {
     margin-top: 50px;
+    text-align: center;
 
     .ski-resorts {
         color: $font-color1;
         font-size: 2rem;
-        line-height: 4rem;
+        line-height: 80px;
+        display: inline;
     }
 }
 
