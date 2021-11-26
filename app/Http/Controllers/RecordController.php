@@ -69,7 +69,7 @@ class RecordController extends Controller
             $record_values->save();
         }
         
-        return redirect('list');
+        return redirect('record-list');
     }
 
     /**
@@ -135,7 +135,7 @@ class RecordController extends Controller
             ]);
         }
 
-        return redirect('list');
+        return redirect('record-list');
     }
 
     /**
@@ -148,6 +148,6 @@ class RecordController extends Controller
     {
         $record = Record::find($id);
         $record->delete();
-        return redirect('list');
+        return redirect('record-list');
     }
 }
