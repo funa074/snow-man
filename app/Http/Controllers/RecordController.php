@@ -20,7 +20,7 @@ class RecordController extends Controller
         $id = Auth::id(); // 認証済みユーザーIDを代入
         $record_values = Record::where('user_id', $id)->latest('date')->get(); // user_idカラムと$idが一致する投稿を日付順で取得
 
-        return view('records/record_list', compact('record_values'));
+        return view('records/list', compact('record_values'));
     }
 
     /**
@@ -30,7 +30,7 @@ class RecordController extends Controller
      */
     public function create(Request $request)
     {   
-        return view('records/record_post');
+        return view('records/post');
     }
 
     /**
@@ -69,7 +69,7 @@ class RecordController extends Controller
             $record_values->save();
         }
         
-        return redirect('record-list');
+        return redirect('list');
     }
 
     /**
@@ -82,7 +82,7 @@ class RecordController extends Controller
     {   
         $record_values = Record::find($id);
 
-        return view('records/record', compact('record_values'));
+        return view('records/show', compact('record_values'));
     }
 
     /**
@@ -98,7 +98,7 @@ class RecordController extends Controller
         if (auth()->user()->id !== $record_values->user_id) {
             return redirect('record-list')->with('error', '許可されていない操作です');
         }
-        return view('records/record_edit', compact('record_values'));
+        return view('records/edit', compact('record_values'));
     }
 
     /**
@@ -134,8 +134,8 @@ class RecordController extends Controller
                 'body'            => $record_data['body']
             ]);
         }
-        
-        return redirect('record-list');
+
+        return redirect('list');
     }
 
     /**
@@ -148,6 +148,6 @@ class RecordController extends Controller
     {
         $record = Record::find($id);
         $record->delete();
-        return redirect('record-list');
+        return redirect('list');
     }
 }
