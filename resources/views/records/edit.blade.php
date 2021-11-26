@@ -26,11 +26,11 @@
         <img src="{{ asset("storage/img/".$record_values->image_file_name) }}" alt="" style="width: 300px">
         <div class="flex img-button-Wrapper">
           <button id="img-change" class="img-button" type="button">画像を変更</button>
-          <form action="" method="post">
-            @method('delete')
-            @csrf
-            <button class="img-button" type="submit" onclick='return confirm("画像を削除しますか？");'>画像を削除</button>
-          </form>
+          <!-- 削除するボタンをチェックボックスで表示する -->
+          <button class="img-button" type="submit">
+            <label id="img-delete" class="img-delete">画像を削除</label>  
+            <input class="img-checkbox" name="img_delete" type="checkbox" for="img-delete"/>
+          </button>
         </div>
       </div>
       
@@ -52,7 +52,7 @@
 
 <script>
   window.addEventListener("DOMContentLoaded", () => { // ページの読み込みが終わったら実行
-    const button = document.querySelector("#img-change");
+    const button = document.getElementById("img-change");
     button.addEventListener("click", () => {
       const recordImg = document.querySelector(".record-img");
       recordImg.classList.add("hidden");
@@ -60,4 +60,18 @@
       imgInput.classList.add("active");
     })
   })
+
+  //画像削除ボタンがclickされたら画像要素を削除するjs
+  window.addEventListener("DOMContentLoaded", () => { // ページの読み込みが終わったら実行
+    const button = document.getElementById("img-delete");
+    const imgCheckbox = document.querySelector(".img-checkbox"); // name['file-delete']
+    button.addEventListener("click", () => {
+      imgCheckbox.setAttribute("checked", "checked"); // inputタグにchecked="checked"を追加
+
+      const recordImg = document.querySelector(".record-img");
+      recordImg.classList.add("hidden");
+      const imgInput = document.querySelector(".img-input-hidden");
+      imgInput.classList.add("active");
+    });
+  });
 </script>
