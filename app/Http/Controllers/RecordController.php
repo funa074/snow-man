@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 use App\Models\Record;
 use App\Http\Requests\RecordRequest;
 
@@ -112,10 +113,13 @@ class RecordController extends Controller
     {
         $record = Record::find($id); // recordsテーブルからidカラムの値を取得
         $user_id = Auth::id(); // 認証済みユーザーIDを代入
-
+        
         $record_data = $request->only(['date', 'ski_resort', 'body']); // formから送られた値を連想配列で受け取り
-
+        
         if ($request->hasFile('img')) {
+            $del_file_name = $record->image_file_name; // 取得したデータからimage_file_nameカラム(ファイルの名前)の情報を取得する
+            Storage::delete('public/img/'.$del_file_name); // storage/app/public/imgから、画像ファイルを削除する
+            
             $path = $request->img->store('public/img'); // /storage/app/public/imgにアップロードファイルを保存
             $image_filename = basename($path); // パスから最後の「ファイル名.拡張子」の部分だけ取得
             
@@ -135,6 +139,12 @@ class RecordController extends Controller
             ]);
         }
 
+        if((bool) $request->img_delete) { //  もし$request->img_deleteがtrue(真偽値)だったら
+            $del_file_name = $record->image_file_name; // 取得したデータからimage_file_nameカラム(ファイルの名前)の情報を取得する
+            Storage::delete('public/img/'.$del_file_name); // storage/app/public/imgから、画像ファイルを削除する
+            $record->update(['image_file_name' => NULL]);
+        }
+        
         return redirect('record-list');
     }
 

@@ -301,8 +301,12 @@ li {
         padding: 1px 0.5rem;
         width: 12rem;
         margin-left: 3rem;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        .img-delete {
+            margin: 0;
+        }
     }
 
     .img-input-hidden {
