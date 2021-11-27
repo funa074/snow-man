@@ -11004,28 +11004,34 @@ li {
   margin-top: 80px;
 }
 
-.welcome-title {
+.welcome-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome-wrapper .welcome-title {
   color: snow;
   text-align: center;
   font-size: 4rem;
   font-weight: bold;
-  margin-top: 220px;
 }
 
-.welcome-text {
+.welcome-wrapper .welcome-text {
   text-align: center;
   font-size: 2rem;
   margin: 0;
   margin-top: 50px;
 }
 
-.welcome-btn {
+.welcome-wrapper .welcome-btn {
   justify-content: space-evenly;
   padding: 0 31rem;
   padding-top: 50px;
 }
 
-.welcome-btn .btn {
+.welcome-wrapper .welcome-btn .btn {
   font-size: 1.5rem;
   color: #111111;
   background-color: #89c3eb;
@@ -11033,7 +11039,7 @@ li {
   display: inline-block;
 }
 
-.welcome-btn .btn:hover {
+.welcome-wrapper .welcome-btn .btn:hover {
   margin-top: 3px;
   color: #111111;
   background: #89c3eb;

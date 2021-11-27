@@ -66,38 +66,44 @@ li {
 }
 
 // welcome
-.welcome-title {
-    color: snow;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    margin-top: 220px;
-}
+.welcome-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-.welcome-text {
-    text-align: center;
-    font-size: 2rem;
-    margin: 0;
-    margin-top: 50px;
-}
+    .welcome-title {
+        color: snow;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: bold;
+    }
 
-.welcome-btn {
-    justify-content: space-evenly;
-    padding: 0 31rem;
-    padding-top: 50px;
+    .welcome-text {
+        text-align: center;
+        font-size: 2rem;
+        margin: 0;
+        margin-top: 50px;
+    }
 
-    .btn {
-        font-size: 1.5rem;
-        color: $font-color1;
-        background-color: $main-color;
-        border-bottom: 5px solid #628fad;
-        display: inline-block;
+    .welcome-btn {
+        justify-content: space-evenly;
+        padding: 0 31rem;
+        padding-top: 50px;
 
-        &:hover {
-            margin-top: 3px;
+        .btn {
+            font-size: 1.5rem;
             color: $font-color1;
-            background: $main-color;
-            border-bottom: 2px solid #628fad;
+            background-color: $main-color;
+            border-bottom: 5px solid #628fad;
+            display: inline-block;
+
+            &:hover {
+                margin-top: 3px;
+                color: $font-color1;
+                background: $main-color;
+                border-bottom: 2px solid #628fad;
+            }
         }
     }
 }
