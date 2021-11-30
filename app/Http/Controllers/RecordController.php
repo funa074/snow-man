@@ -83,6 +83,9 @@ class RecordController extends Controller
     {   
         $record_values = Record::find($id);
 
+        if (auth()->user()->id !== $record_values->user_id) {
+            return redirect('record-list')->with('error', '許可されていない操作です');
+        }
         return view('records/show', compact('record_values'));
     }
 
@@ -156,8 +159,12 @@ class RecordController extends Controller
      */
     public function destroy($id)
     {
-        $record = Record::find($id);
-        $record->delete();
+        $record_values = Record::find($id);
+        $record_values->delete();
+
+        if (auth()->user()->id !== $record_values->user_id) {
+            return redirect('record-list')->with('error', '許可されていない操作です');
+        }
         return redirect('record-list');
     }
 }
