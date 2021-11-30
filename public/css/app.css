@@ -11077,13 +11077,19 @@ li {
   display: inline;
 }
 
-.ski-resort {
+.ski-resort-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.ski-resort-wrapper .ski-resort {
   text-align: center;
   font-size: 4rem;
   margin-top: 80px;
 }
 
-.ski-resort-table {
+.ski-resort-wrapper .ski-resort-table {
   margin: 80px auto 0;
   text-align: center;
   width: 50%;
@@ -11091,12 +11097,18 @@ li {
   border: solid 8px #89c3eb;
 }
 
-.ski-resort-table td {
+.ski-resort-wrapper .ski-resort-table td {
   padding: 0.8rem;
   background: snow;
 }
 
-.my-page-table {
+.my-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.my-page-wrapper .my-page-table {
   margin: 80px auto 0;
   text-align: center;
   width: 55%;
@@ -11104,18 +11116,19 @@ li {
   border: solid 8px #89c3eb;
 }
 
-.my-page-table td {
+.my-page-wrapper .my-page-table td {
   padding: 1rem;
   background: snow;
+  font-size: 2rem;
 }
 
-.my-page-btn {
+.my-page-wrapper .my-page-btn {
   justify-content: space-evenly;
   padding: 0 23rem;
   padding-top: 80px;
 }
 
-.my-page-btn .btn {
+.my-page-wrapper .my-page-btn .btn {
   font-size: 2rem;
   color: #111111;
   background-color: #89c3eb;
@@ -11124,7 +11137,7 @@ li {
   margin: 0 2rem;
 }
 
-.my-page-btn .btn:hover {
+.my-page-wrapper .my-page-btn .btn:hover {
   margin-top: 3px;
   color: #111111;
   background: #89c3eb;

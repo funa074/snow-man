@@ -142,57 +142,70 @@ li {
 }
 
 // ski-resort
-.ski-resort {
-    text-align: center;
-    font-size: 4rem;
-    margin-top: 80px;
-}
+.ski-resort-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 
-.ski-resort-table {
-    margin: 80px auto 0;
-    text-align: center;
-    width: 50%;
-    font-size: 3rem;
-    border: solid 8px $main-color;
+    .ski-resort {
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 80px;
+    }
 
-    td {
-        padding: 0.8rem;
-        background: snow;
+    .ski-resort-table {
+        margin: 80px auto 0;
+        text-align: center;
+        width: 50%;
+        font-size: 3rem;
+        border: solid 8px $main-color;
+
+        td {
+            padding: 0.8rem;
+            background: snow;
+        }
     }
 }
 
 // my-page
-.my-page-table {
-    margin: 80px auto 0;
-    text-align: center;
-    width: 55%;
-    font-size: 3rem;
-    border: solid 8px $main-color;
+.my-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 
-    td {
-        padding: 1rem;
-        background: snow;
+    .my-page-table {
+        margin: 80px auto 0;
+        text-align: center;
+        width: 55%;
+        font-size: 3rem;
+        border: solid 8px $main-color;
+
+        td {
+            padding: 1rem;
+            background: snow;
+            font-size: 2rem;
+        }
     }
-}
 
-.my-page-btn {
-    justify-content: space-evenly;
-    padding: 0 23rem;
-    padding-top: 80px;
+    .my-page-btn {
+        justify-content: space-evenly;
+        padding: 0 23rem;
+        padding-top: 80px;
 
-    .btn {
-        font-size: 2rem;
-        color: $font-color1;
-        background-color: $main-color;
-        border-bottom: 5px solid #628fad;
-        display: inline-block;
-        margin: 0 2rem;
-
-        &:hover {
-            margin-top: 3px;
+        .btn {
+            font-size: 2rem;
             color: $font-color1;
-            background: $main-color;
-            border-bottom: 2px solid #628fad;
+            background-color: $main-color;
+            border-bottom: 5px solid #628fad;
+            display: inline-block;
+            margin: 0 2rem;
+
+            &:hover {
+                margin-top: 3px;
+                color: $font-color1;
+                background: $main-color;
+                border-bottom: 2px solid #628fad;
+            }
         }
     }
 }
