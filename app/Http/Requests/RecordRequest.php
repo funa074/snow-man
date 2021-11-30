@@ -31,6 +31,16 @@ class RecordRequest extends FormRequest
         ];
     }
     
+    /**
+     * バリデーションエラーのメッセージをカスタマイズする
+     *
+     * @return array
+     */
+    public function massages()
+    {
+        //
+    }
+
     public function attributes()
     {
         return [
