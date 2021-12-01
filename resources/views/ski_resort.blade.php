@@ -25,7 +25,7 @@
     <tr>
       <td>日中の気温</td>
       <td>
-        @if ($ski_resort_temp === -0)
+        @if ($ski_resort_temp == -0)
           0℃
         @else
           {{ $ski_resort_temp }}℃
