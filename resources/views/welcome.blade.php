@@ -16,8 +16,13 @@
         </p>
     
         <div class="welcome-btn flex">
-            <a href="{{ route('register') }}" class="btn">新規登録</a>
-            <a href="{{ route('login') }}" class="btn">ログイン</a>
+            @if (auth()->user())
+                <a href="/my-page" class="btn">マイページ</a>
+                <a href="/home" class="btn">スキー場一覧</a>
+            @else
+                <a href="{{ route('register') }}" class="btn">新規登録</a>
+                <a href="{{ route('login') }}" class="btn">ログイン</a>
+            @endif
         </div>
     </div>
 
