@@ -12,7 +12,7 @@
                 <div class="records-table">
                     <p class="records-ski-resort">{{ $record_value->ski_resort }}</p>
                     <p class="records-date">{{ $record_value->date }}</p>
-                    <p class="records-body">{{ $record_value->body }}</p>
+                    <p class="records-body">{!! nl2br(htmlspecialchars($record_value->body)) !!}</p>
                 </div>
             </a>
         </article>
