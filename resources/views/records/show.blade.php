@@ -6,7 +6,7 @@
     <p class="record-ski-resort">{{ $record_values->ski_resort }}</p>
 
     <img class="record-img" src="{{ asset($record_values->image_full_path) }}" />
-    <p class="record-body">{{ $record_values->body }}</p>
+    <p class="record-body">{!! nl2br(htmlspecialchars($record_values->body)) !!}</p>
 
     <div class="record-btn-wrapper flex">
       <a href="/record-list" class="btn back btn-outline-primary">戻る</a>
