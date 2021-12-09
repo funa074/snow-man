@@ -27,7 +27,7 @@
 -   JavaScript
 -   PHP 7.3.24
 -   Laravel 6.20.33
--   MySQL Ver 8.0.27
+-   MySQL 8.0.27
 
 ## 注意事項
 
