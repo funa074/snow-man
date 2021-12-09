@@ -2,7 +2,7 @@
 
 **スキー場の気象情報やユーザーの滑走履歴を記録する WEB アプリケーションです。**
 <br><br>
-**URL:** ~https://snow-man27.herokuapp.com/~<br>
+**URL:** https://snow-man27.herokuapp.com/<br>
 
 ## アプリ概要
 
