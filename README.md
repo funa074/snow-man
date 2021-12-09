@@ -25,9 +25,9 @@
 -   HTML
 -   CSS(Sass)
 -   JavaScript
--   PHP
--   Laravel6
--   MySQL
+-   PHP 7.3.24
+-   Laravel 6.20.33
+-   MySQL Ver 8.0.27
 
 ## 注意事項
 
