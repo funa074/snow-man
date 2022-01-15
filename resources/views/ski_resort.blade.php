@@ -33,7 +33,7 @@
       </td>
     </tr>
     <tr>
-      <td>積雪量</td>
+      <td>本日の積雪予報</td>
       <td>{{ $ski_resort_snow_cover }}cm</td>
     </tr>
   </table>
